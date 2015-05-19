@@ -1,0 +1,36 @@
+<style>
+
+
+    #calendario {
+      font-family:Arial ;
+      font-size:10px;
+    }
+    #calendario caption {
+      text-align:center;
+      padding:5px 10px;
+      background-color:#5C666F;
+      color:#fff;
+      font-weight:bold;
+    }
+    #calendario th {
+      background-color:#00314F;
+      color:#fff;
+      width:40px;
+    }
+    #calendario td {
+      text-align:right;
+      padding:2px 5px;
+      background-color:red;
+    }
+    #calendario .hoy {
+      background-color:silver;
+      font-weight: bold;
+    }
+
+    #encabezado {
+      text-align:center;
+      padding:5px 10px;
+      font-weight:bold;
+      background-image: url("image/f0421.gif");
+    }
+  </style>
