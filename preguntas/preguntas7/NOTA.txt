@@ -1,0 +1,12 @@
+5/10
+
+El primer for_each tiene mal el nombre de la variable.
+Debias usar:
+  foreach ($pais_capitales as $capital => $ciudad)
+
+Faltan las llaves ({}) en los foreach.
+Está cerrando la tabla antes de imprimir las filas y celdas.
+En lugar del for podias usar otro foreach.
+Con ese correcciones no estás muy lejos de obtener el resultado deseado.
+
+

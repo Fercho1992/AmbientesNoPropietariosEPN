@@ -1,0 +1,6 @@
+NOTA: 10/10
+Buen trabajo. Me da una buena idea de lo que sabes hacer, utilizando funciones
+no tan básica de JS y CSS. Una recomendación sería que se deben optimizar las 
+imágenes para la web que pesen lo menos posible. Y los videos es mejor tenerlos
+en los servidores de Youtube o parecidos para una carga más rápida.
+Tratar de separar siempre todos los archivos de HTML, CSS, JS, PHP.
