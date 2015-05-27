@@ -1,8 +1,7 @@
 
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        <title>Formulario</title>
     </head>
     <body>
         <form action="./datos.php" method="POST">
@@ -12,6 +11,8 @@
        <p>
        </p>
        <p>
+
+       <!--Labels-->
          <label>Nombre:</label>
          <input type="text" name="nombre" />
        </p>
@@ -22,21 +23,22 @@
        <p>
        Genero:</td><br>
      <label>
-         <input type="radio" name="genero" id="ref_mascu" value="Masculino" /> 
+     <!--Radio Buttons-->
+         <input type="radio" name="genero" id="masculino" value="Masculino" /> 
               Masculino </label>
-              <input type="radio" name="genero" id="ref_feme" value="Femenino" /> 
+              <input type="radio" name="genero" id="femenino" value="Femenino" /> 
               Femenino </label>
      <br />
      <label>
             
       <br />
+      <!--List-->
           <label>Correo electronico:</label>
          <input type="text" name="correo_electronico" /> 
        </p>
        <p>
            Cuidad de nacimiento:
            <select name="cuidad" id="ciudad">
-                <option selected="selected"></option>
                 <option>Quito</option>
                 <option>Guayaquil</option>
                 <option>Cuenca</option>
@@ -48,6 +50,7 @@
          </select>        
        </p>
        <p>
+       <!--ChecksBoxs-->
            Intereses:
            <br>
            <INPUT type="checkbox" name="intereses" value="Programacion">Programacion<br />
@@ -62,7 +65,7 @@
        <p>
            Acerca de ti:
            <br>
-           <textarea id="bigrafia" name="biografia" rows="5" cols="20">
+           <textarea id="biografia" name="biografia" rows="5" cols="20">
            </textarea>
        </p>
        <p>
