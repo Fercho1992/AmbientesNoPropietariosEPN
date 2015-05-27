@@ -14,7 +14,7 @@ include ('config.php');
             <label> Contrasea </label>
             <input type="password" name="contraseña"/>
             <br>
-            <input type="submit" value="OK" >
+            <input type="submit" value="Ingresar" >
 
         </form>
     </body>
