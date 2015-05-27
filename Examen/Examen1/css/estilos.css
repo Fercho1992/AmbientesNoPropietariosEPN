@@ -1,4 +1,25 @@
-.table{
-  border: #4285f4;
-  background: #eca403;
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/05/2015, 05:45:52 PM
+    Author     : Admin
+*/
+
+redes1{
+    background: #eca403;
+    border-color: #4285f4;
+    
+}
+progra{
+    background: appworkspace;
+    border-color: blue;
+}
+td1{
+    font-weight: bold;
+}
+td2{
+    font-weight: bold;
 }
