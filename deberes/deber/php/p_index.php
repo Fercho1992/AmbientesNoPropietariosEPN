@@ -14,44 +14,41 @@
  *                   Debe ser llamado antes de mostrar algo por pantalla.
  *                   http://php.net/manual/es/function.header.php
  */
-
-if( isset( $_SESSION['username'] ) && isset($_SESSION['password']) ){
-  http_redirect( 'inicio.php' );
+if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
+    http_redirect('inicio.php');
 }
 /**
  * Si no existe una sesión ya iniciada entonces verificar si se ha enviado
  * datos para un inicio de sesión mediante POST, si este es el caso entonces
  * crear la variable de sesión para el usuario e ingresar al inicio
  */
-
 $usuarios = array(
-    array('usuario'=>'fernando','contraseña'=>'moya123'),
-    array('usuario'=>'brayan','contraseña'=>'brayan1997'),
-    array('usuario'=>'maria','contraseña'=>'maria1970'));
-
-$validar=true;
-    $nombre= $_POST['username'];
-    $clave = $_POST['password'];
-    foreach($usuarios as $s){
-     if($nombre == $s['usuario'] and $clave==$s['contraseña'])
-     {
-     $validar=true;
-     break;
-
-}elseif($_POST['username']=="" && $_POST['password']==""){
-    $validar=false;
+    array('usuario' => 'fernando', 'contraseña' => 'moya123'),
+    array('usuario' => 'maria', 'contraseña' => 'maria1970'),
+    array('usuario' => 'bryan', 'contraseña' => 'bryan1997'),
+    array('usuario' => 'alfredo', 'contraseña' => 'alfredo1966'));
+if($_POST){
+$validar = true;
+        $nombre = $_POST['username'];
+        $clave = $_POST['password'];
+foreach ( $usuarios as $s){
+        if ( $nombre == $s [ 'usuario'] and $clave==$s['contraseña']){
+$validar = true;
+break;
+        } elseif($_POST['username'] == "" && $_POST['password'] ==""){
+$validar = false;
+} else{
+$validar = false;
 }
-else{
-     $validar=false;
-}   
-    }
-    if($validar){
-        $_SESSION['username']=$_POST['username'];
+        }
+if($validar){
+        $_SESSION['username'] = $_POST['username'];
         http_redirect('inicio.php');
-    }else{
-        echo 'Usuario y contraseña incorrecta';
+} else{
+    echo '<br>';
+echo 'El usuario o la contraseña son incorrectos';
     }
-
+}
     /*Posible solucion para los errores
     $validar=true;
     $nombre= isset($_POST['username'])?$POST['username']:'';
@@ -75,7 +72,5 @@ else{
     }else{
         echo 'Usuario y contraseña incorrecta';
     }
-
-
     */
 ?>

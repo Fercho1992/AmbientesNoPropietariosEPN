@@ -5,7 +5,7 @@
   <body>
     <div class="c1">
       <section>
-        <p>Tu nombre de usuario es :<h1> <?=$_SESSION['username'];?><h1></p>
+        <center><p><h1>BIENVENIDO</h1><h1> <?=$_SESSION['username'];?></h1></p></center>
       </section>
     </div>
 
