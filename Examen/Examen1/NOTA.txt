@@ -1,0 +1,20 @@
+7/10
+
+index.php
+  se debe verificar la existencia de las variables $_POST para evitar los errores al inicio.
+  Se debe verificar primero el contenido de los campos del form y luego buscar y validar el usuario.
+  inicio de sesion correcto
+  formulario correcto
+  redireccion correcta si ya existe la sesión
+  los mensajes se muestran correctamente
+
+inicio.php
+  buen uso de elementos HTML
+  declaración de arreglos correcto
+  se incluye correctamente el CSS pero se debe verificar cuando incluirlo.
+  las tablas se generan correctamente
+  simplemente se debe verificar que opción del select esta activa para mostrar una u otra tabla.
+
+htaccess
+  correcto pero copiado de los deberes
+

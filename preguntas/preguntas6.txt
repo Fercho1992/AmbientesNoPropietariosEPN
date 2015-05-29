@@ -1,3 +1,4 @@
+NOTA: 7,5/10
 1.En caso de ser true va a ser 1 y si es false va a se 0
 2.Para forzar la presedencia de operadores debemos de usar parentesis.
 3.

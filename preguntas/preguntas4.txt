@@ -1,3 +1,4 @@
+NOTA: 8/10
 1.<?php  ?>
 2. punto y coma (;)
 3.el simbolo $ no permite indentificar variables estan sean numericas a de tipo string.
@@ -12,11 +13,11 @@ $area=$pi*5;
 
 6.
 
-6.1 falso
+6.1 falso (Verdadero)
 6.2 Falso
 
-7.Son similares a las variable, pero su contenido no puede ser modificado.
-8.La diferencia es que va a 
+7.Son similares a las variable, pero su contenido no puede ser modificado. 
+8.La diferencia es que va a (la una suma y luego utiliza el valor la otra utiliza el valor y luego suma)
 9.Una puede ser que sea una variable global, ya que estas variables se pueden acceder desde cualquier 
 parte de documento PHP.
 10.
