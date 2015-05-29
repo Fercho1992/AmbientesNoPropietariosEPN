@@ -6,6 +6,7 @@
 <body>
 <form action="./Formulario.php" method="POST">
 <?php
+echo '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">';
 //Visualizacion de la informacion introducida en el formulario
 $nombre = $_POST['nombre'];
 $apellido=$_POST['apellido'];
@@ -15,17 +16,17 @@ $cuidad=$_POST['cuidad'];
 $interese=$_POST['intereses'];
 $biografia=$_POST['biografia'];
 
-echo "Usted es " .$nombre;
-echo " " .$apellido;
-echo " su Correo es: " .$correo;
-echo " de genero  ". $generos;
+echo "Usted es" .$nombre;
+echo "" .$apellido;
+echo " Correo es: " .$correo;
+echo " de genero :". $generos;
 echo " nacido en lacuidad de ". $cuidad;
-echo " y lo que mas le gusta es ".$interese;
-echo ". Ademas una pequeña biografia que soy ".$biografia;
+echo " y lo que mas le gusta es: ".$interese;
+echo "ademas una pequeña biografia:  ".$biografia;
 
 ?>
 
-<div >
+<div class="c3">
       <section>
     
         <p>
@@ -34,7 +35,7 @@ echo ". Ademas una pequeña biografia que soy ".$biografia;
       </section>
       </div>
       </form>
-      <div >
+      <div class="c2">
       <section>
         <p>
           <a href="./cerrar_sesion.php">Cerrar sesión</a>
