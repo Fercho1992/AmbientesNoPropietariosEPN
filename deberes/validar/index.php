@@ -3,15 +3,26 @@
 <!--AMBIENTES NO PROPIETARIOS-->
 <!--FERNANDO MOYA-->
 <!--03/07/2015-->
-<!--Uso del Bootstrap-->
-<!--Bloque PHP-->
-<?php error_reporting (0);//Desactivar errores Notice Undefined
-$conn = new Mysqli($host, $usuario,$cont,$bdd);
+<!--Uso del Bootstrap, AJAX, PHP-->
+<!--
+1. Realizar una página que contenga un link de contacto que abra una
+ventana modal de bootstrap que contenga un formulario con: nombre
+(texto), email (texto), mensaje (textarea), noticias (checkbox).
 
-if($conn->connect_error)
-	die ($conn->connect_error);
+2. El formulario debe enviarse a través de AJAX para ser guardado en un
+tabla mensajes.
 
-?>
+3. Utilizar el plugin jQuery.validation
+(http://jqueryvalidation.org/) para validar el formulario antes
+de ser enviado al servidor.
+
+4. Utilizar los estilos de bootstrap para realizar la página.
+
+5. El formulario debe vaciarse cada vez que se envían los datos o se
+cierra el form.
+
+
+-->
 
 <!--Bloque HTML-->
 
@@ -125,15 +136,11 @@ if($conn->connect_error)
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-3">
-              <span>   </span>
-            </div>
             <!--Formulario de inscripcion-->
-            <!--Bloque PHP-->
-            <?php
-                echo '
-                  <form action ="" method="post id="formulario" >
-                  
-                  <button type="button" id= "guardar" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal2">
+                <!--Boton Modificar-->
+
+                  <form action ="" method="post" >
+                  <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal2">
                     Modificar
                   </button>
 
@@ -142,30 +149,28 @@ if($conn->connect_error)
                       <div class="modal-content">
                         <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h1 class="modal-title" id="myModalLabel2">Actualizacion</h1>
+                          <h1 class="modal-title" id="myModalLabel2">Actualizacion de datos</h1>
                         </div>
                         <div class="modal-body">
 
-                <label for="exampleInputName1">Nombre: </label>
-                <input type="text" name="nombre" class="form-control" id="nombre"  value="'.$row['nombre'].'">
+                <label for="exampleInputName2">Nombre</label>
+                <input type="text" name="nombre" class="form-control" id="nombre">
                 <br>
                 <br>
 
-                <label for="exampleInputName2">Correo Electronico: </label>
-                <input type="text" name="correoElectronico" class="form-control" id="correo" value="'.$row['correoElectronico'].'">
+                <label for="exampleInputName2">Correo electronico</label>
+                <input type="text" name="correo" class="form-control" id="correo" >
                 <br>
                 <br>
-                <label >Mensaje: </label>
-                <br>
-                <br>
-                <textarea class="form-control" rows="8" id="mensaje" value="'.$row['mensaje'].'"></textarea>
-                <br>
-                <br>
+
+                <label>Comentarios o sugerencias</label>
+                <div class="form-group">
+                <textarea class="form-control"  name="comentario" name="comentario" rows="5"></textarea>
+                <div class="checkbox">
                 <label>
-                Confirmar 
-                <input type="checkbox" name="confirmar" id="confirmar" value="'.$row['confirmar'].'">
-                </label>
-                <br>
+                 <input type="checkbox" value="" name="noticia">Recibir noticias</label>
+                 </div>
+                 </div>
                 <br>
                 <br>
                   </div>
@@ -175,30 +180,27 @@ if($conn->connect_error)
                   </div>
                 </div>
               </div>
-          <input type="hidden" value="' . $row['id'] . '"  name="id">
-          </form>'
-         ?>;
-                </div>
-              </form>
-              </div>
-            </div>
-            <div class="col-md-3">  </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="js/jquery.js"></script><!--jquery para que trabaje junto a bootstrap-->
-    <script src="js/bootstrap.min.js"></script><!--javascript para trabajar con bootstrap-->
-  </body>
-  <!--Fuentes de consulta
+          </form>
 
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <script type="text/javascript" src="js/main.js"></script>
+                    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script src="js/jquery.js"></script><!--jquery para que trabaje junto a bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script><!--javascript para trabajar con bootstrap-->
+            </body>
+            
+    
+  <!--Fuentes de consulta
 http://getbootstrap.com/javascript/
 https://www.youtube.com/watch?v=-9NXJtE1bzI
 https://www.youtube.com/watch?v=j9LgSZsU_bQ
 https://www.youtube.com/watch?v=kpZVy5Z7iwU
 https://www.youtube.com/watch?v=gIPuXfG_vsA
-https://www.youtube.com/watch?v=7jxwf6gsk0Q
--->
+https://www.youtube.com/watch?v=7jxwf6gsk0Q-->
 </html>
 

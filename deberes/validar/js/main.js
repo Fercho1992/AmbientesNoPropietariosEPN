@@ -18,9 +18,15 @@ $(document).ready(function() {
     },
     messages: {
     nombre: {
-      required: "Ingresa tu nombre.",
-      minlength: $.validator.format("Al menos {0} caracteres requeridos")
-    }
+      required: "Ingresa tu nombre. Por favor",
+      minlength:"Al menos 5 caracteres como minimo",
+      maxlength:"Como maximo 25 caracteres"
+    },
+    mensaje:{
+      required:"Este campo es obligatorio",
+      minlength:"Al menos 5 caracteres como minimo",
+      maxlength:"Como maximo 25 caracteres"
+    },
   }
   });
 
@@ -33,19 +39,19 @@ $(document).ready(function() {
         url: 'rpc/rpc.php',
         type: 'post',
         // dataType: 'json',
-        data: {"nombre": $("#formulario #nombre").val(),
-              "email": $("#formulario #correo").val(),
-              "noticias": noticias,
-              "mensaje": $("#formulario #mensaje").val()}
+        data: {
+          "nombre": $("#nombre").val(),
+              "email": $("#correo").val(),
+              "mensaje": $("#mensaje").val()}
       })
       .done(function(msg) {
-        console.log("success");
-        $("#success").html(msg)
-        $('#contact-form').modal('hide')
+        console.log("mensaje");
+        $("#mensaje").html(msg)
+        $('#formulario').modal('hide')
       })
       .fail(function(jqXHR, textStatus, errorThrown) {
-        console.log("fail: " + textStatus + " " + errorThrown);
-        $("#error").html(textStatus)
+        console.log("ERROR: " + textStatus + " " + errorThrown);
+        $("#mensaje").html(textStatus)
       })
       .always(function() {
         console.log("complete");
