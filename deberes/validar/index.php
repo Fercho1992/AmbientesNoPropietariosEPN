@@ -130,73 +130,10 @@ if($conn->connect_error)
             <!--Formulario de inscripcion-->
             <!--Bloque PHP-->
             <?php
-
-
-            if($_POST){
-  $nombre = $_POST['nombre'];
-  $email = $_POST['email'];
-  $mensaje = $_POST['mensaje'];
-  $confirmar= $_POST['confirmar'];
-
-  if($nombre != '' && $email != '' && $mensaje != ''){
-    /*Sentencia SQL para insertar informacion en la tabla registro*/
-    $q_insert = "insert into registro(nombre,email,mensaje,confirmar)
-                  values ('$nombre', '$email', '$mensaje', '$confirmar')";
-    $res = $conn->query($q_insert);
-  
-    if(!$res)
-  {
-      echo '<div align="center"> No se puede insertados los datos a la tabla registro' . $conn->error . '</div>';
-    } 
-  else 
-  {
-      echo '<div  align="center">Informacion insertada correctamente.</div>';
-    }
-  } 
-  else
-   {
-    echo '<div  align="center">Ingrese todos los campos requeridos.</div>';
-  }
-  }
-
-            /*Seleccionar todos los datos de la tabla empleado*/
-
-              $query = 'select * from  registro';
-              $result = $conn->query($query);
-              if(!$result)die($conn->error);
-              $num_rows = $result->num_rows;
-              echo '<br>';
-              echo '<br>';
-              echo '<table class="table table-bordered">';
-                echo '<tr class="active">';
-                echo '<th>Id</th>';
-                  echo '<th>Nombre</th>';
-                  echo '<th>Correo</th>';
-                  echo '<th>Mensaje</th>';
-                  echo '<th>Confirmacion</th>';
-                  echo '<th>Opciones</th>';
-                  echo '</tr>';
-
-
-                  for ($i=0; $i <$num_rows ; ++$i) { 
-                    $result->data_seek($i);
-                    $row = $result->fetch_array(MYSQLI_ASSOC);
-
-
-                echo '<tr class="info">';
-                echo '<td>'.$row['id'].'</td>';
-                echo '<td>'.$row['nombre'].'</td>';
-                echo '<td>'.$row['email'].'</td>';
-                echo '<td>'.$row['mensaje'].'</td>';
-                echo '<td>'.$row['noticias'].'</td>';
-                echo '<td> 
-
-                <!--Boton eliminar-->
-
-                <!--Boton Modificar-->
-
-                  <form action ="" method="post" >
-                  <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal2">
+                echo '
+                  <form action ="" method="post id="formulario" >
+                  
+                  <button type="button" id= "guardar" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal2">
                     Modificar
                   </button>
 
@@ -210,7 +147,7 @@ if($conn->connect_error)
                         <div class="modal-body">
 
                 <label for="exampleInputName1">Nombre: </label>
-                <input type="text" name="nombre" class="form-control" id="nombre"  value="'.$row[''].'">
+                <input type="text" name="nombre" class="form-control" id="nombre"  value="'.$row['nombre'].'">
                 <br>
                 <br>
 
@@ -239,16 +176,8 @@ if($conn->connect_error)
                 </div>
               </div>
           <input type="hidden" value="' . $row['id'] . '"  name="id">
-          </form>
-          </td>';
-                echo '</tr>';
-              }
-              echo '</table>';
-
-              /*Cerrar la conexion con la base de datos*/
-              $result->close();
-              $conn->close();
-            ?>
+          </form>'
+         ?>;
                 </div>
               </form>
               </div>
@@ -258,6 +187,7 @@ if($conn->connect_error)
         </div>
       </div>
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
     <script src="js/jquery.js"></script><!--jquery para que trabaje junto a bootstrap-->
     <script src="js/bootstrap.min.js"></script><!--javascript para trabajar con bootstrap-->
   </body>
