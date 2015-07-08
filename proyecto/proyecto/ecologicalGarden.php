@@ -9,9 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- startedTemplate CSS -->
     <link href="css/startedTemplate.css" rel="stylesheet">
-    
+    <!-- Rural_house_32 -->
     <link rel="shortcut icon" href="image/Rural_house_32.png">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,25 +33,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img src="image/Farmer_32.png"><a class="navbar-brand" href="#">Inicio</a>
+      <a class="navbar-brand" href="index.php">Inicio</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="whoWeAre.php">Quienes Somos<span class="sr-only">(current)</span><img src="image/Big_barn_32.png"></a></li>
-        <li><a href="animals.php">Animales<img src="image/Cow_silhouette_32_1.png"></a></li>
+        <li><a href="farmAnimals.php">Ganaderia<img src="image/Cow_silhouette_32_1.png"></a></li>
         <li><a href="ecologicalGarden.php">Huerto ecologico<img src="image/Plant_leaves_on_a_hand_32.png"></a></li>
         <li class="dropdown">
-          <a href="farmEquipment.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="image/Tractor_32.png">Maquinaria Agricola<span class="caret"></span></a>
+          <a href="farmEquipment.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="image/Tractor_32.png">Maquinaria <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="farmEquipment.php">Tractores</a></li>
-            <li><a href="farmEquipment.php">Remolques</a></li>
-            <li><a href="farmEquipment.php">Segadora</a></li>
-            <li><a href="farmEquipment.php">Arado de discos</a></li>
-            <li><a href="farmEquipment.php">Rodillo</a></li>
+            <li><a href="farmEquipment.php">Agricola</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="farmEquipment.php">Ordeño Mecanico</a></li>
+            <li><a href="livestockEquipment.php">Ganadera</a></li>
           </ul>
         </li>
       </ul>
@@ -69,6 +65,67 @@
   </div><!-- /.container-fluid -->
 </nav>
 </div>
+
+        <!-- Portfolio Item Row -->
+            <div class="col-md-6">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="image/huerto.jpg" alt="Huerto ecologico">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="image/huerto1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="image/huerto2.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="image/semilla.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Huerto ecologico</h3>
+                <p>Hacienda "La Calera" posee un huerto ecologico, el cual es labrado por trabajores quienes cada semana van cultivando hortalizas usando tecnicas innovadoras y amigables con el ambiente.
+                 </p>
+                <h3>Nuestros cultivos</h3>
+                <ul>
+                    <li>Rabano</li>
+                    <li>Zanahoria</li>
+                    <li>Cebolla</li>
+                    <li>Espinaca</li>
+                    <li>Lechuga</li>
+                    <li>Peregil</li>
+                    <li>Col</li>
+                    <li>Brocoli</li>
+                    <li>Coliflor</li>
+                    <li>Pimientos</li>
+                    <li>Tomate</li>
+                    <li>Pepino</li>
+                    <li>Arvejas</li>
+                    <li>Aji</li>
+                </ul>
+            </div>
+
 
 <div class="navbar navbar-default navbar-fixed-bottom">
             <!-- Contact Details Column -->
@@ -88,7 +145,7 @@
                     </li>
                 </ul>
         </div>
-
+<!-- jQuery -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

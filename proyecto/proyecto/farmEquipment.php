@@ -9,7 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- startedTemplate CSS -->
     <link href="css/startedTemplate.css" rel="stylesheet">
+    <!-- Rural_house_32 -->
     <link rel="shortcut icon" href="image/Rural_house_32.png">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,25 +33,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img src="image/Farmer_32.png"><a class="navbar-brand" href="#">Inicio</a>
+      <a class="navbar-brand" href="index.php">Inicio</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="whoWeAre.php">Quienes Somos<span class="sr-only">(current)</span><img src="image/Big_barn_32.png"></a></li>
-        <li><a href="animals.php">Animales<img src="image/Cow_silhouette_32_1.png"></a></li>
+        <li><a href="farmAnimals.php">Ganaderia<img src="image/Cow_silhouette_32_1.png"></a></li>
         <li><a href="ecologicalGarden.php">Huerto ecologico<img src="image/Plant_leaves_on_a_hand_32.png"></a></li>
         <li class="dropdown">
-          <a href="farmEquipment.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="image/Tractor_32.png">Maquinaria Agricola<span class="caret"></span></a>
+          <a href="farmEquipment.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="image/Tractor_32.png">Maquinaria <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="farmEquipment.php">Tractores</a></li>
-            <li><a href="farmEquipment.php">Remolques</a></li>
-            <li><a href="farmEquipment.php">Segadora</a></li>
-            <li><a href="farmEquipment.php">Arado de discos</a></li>
-            <li><a href="farmEquipment.php">Rodillo</a></li>
+            <li><a href="farmEquipment.php">Agricola</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="farmEquipment.php">Ordeño Mecanico</a></li>
+            <li><a href="livestockEquipment.php">Ganadera</a></li>
           </ul>
         </li>
       </ul>
@@ -68,6 +66,77 @@
 </nav>
 </div>
 
+<!-- Equipment -->
+            <div class="col-lg-12">
+                <h2 class="page-header">Maquinaria Agricola</h2>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="image/tractorM.png" alt="">
+                    <div class="caption">
+                        <h3>Tactor John Deere <br>
+                            <small>Serie 6125R</small>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="image/segadora.jpg" alt="">
+                    <div class="caption">
+                        <h3>Suspendida trasera individual<br>
+                            <small>324A</small>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="image/rastra.jpg" alt="">
+                    <div class="caption">
+                        <h3>Rastra de levante <br>
+                            <small>RL-TIPO II 18D</small>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="image/desmalezadora.png" alt="">
+                    <div class="caption">
+                        <h3>Desmalezadora<br>
+                            <small>MX5</small>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="image/rotavator.jpg" alt="">
+                    <div class="caption">
+                        <h3>  Howard Rotavator<br>
+                            <small>Serie 500</small>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="image/remolque.jpg" alt="">
+                    <div class="caption">
+                        <h3>Remolque agricola basculante<br>
+                            <small>MMA 3500</small>
+                        </h3>
+                        
+                    </div>
+                </div>
+            </div>
+
 <div class="navbar navbar-default navbar-fixed-bottom">
             <!-- Contact Details Column -->
                 <p class="navbar-text pull-left"><img src="image/socialNetwork/Close_envelope_32.png"> 
@@ -85,8 +154,9 @@
                         <a href="https://instagram.com/"><img src="image/socialNetwork/Instagram_Logo_32.png"></a>
                     </li>
                 </ul>
+                </p>
         </div>
-
+<!-- jQuery -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -9,7 +9,9 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- startedTemplate CSS -->
     <link href="css/startedTemplate.css" rel="stylesheet">
+    <!-- Rural_house_32  -->
     <link rel="shortcut icon" href="image/Rural_house_32.png">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,25 +33,21 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img src="image/Farmer_32.png"><a class="navbar-brand" href="#">Inicio</a>
+      <a class="navbar-brand" href="index.php">Inicio</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="whoWeAre.php">Quienes Somos<span class="sr-only">(current)</span><img src="image/Big_barn_32.png"></a></li>
-        <li><a href="animals.php">Animales<img src="image/Cow_silhouette_32_1.png"></a></li>
+        <li><a href="farmAnimals.php">Ganaderia<img src="image/Cow_silhouette_32_1.png"></a></li>
         <li><a href="ecologicalGarden.php">Huerto ecologico<img src="image/Plant_leaves_on_a_hand_32.png"></a></li>
         <li class="dropdown">
-          <a href="farmEquipment.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="image/Tractor_32.png">Maquinaria Agricola<span class="caret"></span></a>
+          <a href="farmEquipment.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="image/Tractor_32.png">Maquinaria <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="farmEquipment.php">Tractores</a></li>
-            <li><a href="farmEquipment.php">Remolques</a></li>
-            <li><a href="farmEquipment.php">Segadora</a></li>
-            <li><a href="farmEquipment.php">Arado de discos</a></li>
-            <li><a href="farmEquipment.php">Rodillo</a></li>
+            <li><a href="farmEquipment.php">Agricola</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="farmEquipment.php">Ordeño Mecanico</a></li>
+            <li><a href="livestockEquipment.php">Ganadera</a></li>
           </ul>
         </li>
       </ul>
@@ -67,6 +65,53 @@
   </div><!-- /.container-fluid -->
 </nav>
 </div>
+
+<!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    <img src="image/logo.png" alt="La Calera" width="70" height="70"> Bienvenidos a la Hacienda "La Calera"
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><img src="image/Book.png" alt="La Calera"> Reseña Historica</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Con mucho esfuerzo y sacrificio la Hacienda "La Calera" comienza sus actividades agricolas, y ganaderas en el año de 1998 con un reducido numero de trabajadores
+                        y maquinaria agricola, con el paso de los años a capacitado al personal y adquirido maquinaria agricola de primera, en la actualidad la produccion agricola 
+                        y ganadera es una de las mejores del canton Mejia aplicando tecnicas del siglo XXI y con personal altamente calificado</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><img src="image/pen.png" alt="Vision">Vision</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Ser una gran empresa agropecuaria que respete la naturaleza y la tierra, aportándole tecnología innovadora que optimice 
+                        resultados, en un ambiente sustentable y con proyección de futuro.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><img src="image/Dove.png" alt="Mision"> Mision</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Trabajar en forma sustentable, por nosotros y por las generaciones que vienen desarrollando sistemas de producción 
+                        ambientalmente aceptables, económicamente viables y socialmente responsables.</p>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
 
 <div class="navbar navbar-default navbar-fixed-bottom">
             <!-- Contact Details Column -->
@@ -86,7 +131,7 @@
                     </li>
                 </ul>
         </div>
-
+        <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
