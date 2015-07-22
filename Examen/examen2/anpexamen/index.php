@@ -32,6 +32,7 @@
         </div>
         <!--Modal-->
           <!-- Button trigger modal -->
+
           <div class="container">
 <a href="" data-toggle="modal" data-target="#myModal">Si eres nuevo registrate</a>
 <br>
@@ -44,6 +45,7 @@
         </div>
 
         <!-- Modal -->
+        <form data-toggle="validator" role="form">
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -51,34 +53,34 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Registro nuevos usuarios</h4>
       </div>
+
       <div id="verificar"class="modal-body">
-        <label for="exampleInputName2">Nombre</label>
-                <input type="text" name="nombre" class="form-control" id="nombre" required>
-                <br>
-                <br>
+        <div class="form-group">
+    <label for="inputName" class="control-label">Nombre</label>
+    <input type="text" class="form-control" id="inputName" placeholder="Fernando Moya" required>
+  </div>                <br>
 
-                <label for="exampleInputName2">Usuario</label>
-                <input type="text" name="correo" class="form-control" id="usuario" required >
-                <br>
-                <br>
-
-                <label for="exampleInputName2">Contraseña</label>
-                <input type="password" id="inputPassword" name="correo" class="form-control" required autofocus >
-                <br>
-                <br>
-
-                <label for="exampleInputName2">Verificar contraseña</label>
-                <input type="password" id="inputPassword" name="correo" class="form-control" required autofocus>
-                <br>
-                <br>
-                  </div>
+                <div class="form-group">
+    <label for="inputName" class="control-label">Usuario</label>
+    <input type="text" class="form-control" id="inputName"  data-minlength="6" required>
+  </div>   
+    <div class="form-group">
+    <label for="inputPassword" class="control-label">Contraseña</label>
+      <input type="password" data-minlength="6" class="form-control" id"in=putPassword" placeholder="Password" required>
+      <br>
+      <input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="¡Vaya , estos no coinciden" placeholder="Confirmar contraseña" required>
+      <div class="help-block with-errors"></div>
+    </div>
+                 
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
         <button class="btn btn-lg btn-primary " type="submit">Crear usuario</button>
       </div>
+       </div>
     </div>
   </div>
 </div>
+</form>
           <!--Cierre modal-->
 
     <!-- Bootstrap core JavaScript
@@ -86,6 +88,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
                 <script type="text/javascript" src="js/main.js"></script>
     <script src="js/jquery.js"></script>
+
+<script src="js/validator.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script> 
     
   </body>

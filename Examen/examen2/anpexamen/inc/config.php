@@ -15,7 +15,7 @@ if ($_POST) {
     $usuario = $_POST['usuario'];
 
 
-    $q_usu = "SELECT * FROM usuarios WHERE usuario = '" . $user . "'";
+    $q_usu = "SELECT * FROM usuarios WHERE usuario = '" . $usuario . "'";
     $result = $conn->query($q_usua);
     $num_rows = $result->num_rows;
 
@@ -38,6 +38,19 @@ function isUsernameAvailable($username)
         return false;
     }
 }
+}
+
+
+function get_usuario($usuario)
+{
+
+
+
+}
+
+
+function guardar_usuario($nombre,$usuario,$contrasena)
+{
 
 
 }
