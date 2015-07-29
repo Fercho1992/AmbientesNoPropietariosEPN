@@ -1,158 +1,205 @@
+<!--Bloque HTML-->
 <!DOCTYPE html>
-<html lang="es">
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>La Calera</title>
-
-    <!-- Bootstrap -->
+    <!--Bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- startedTemplate CSS-->
-    <link href="css/startedTemplate.css" rel="stylesheet">
-    <!-- Rural_house_32 -->
-    <link rel="shortcut icon" href="image/Rural_house_32.png"/>
+    <!--font-awesome-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!--prettyPhoto-->
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <!--animate-->
+    <link href="css/animate.css" rel="stylesheet">
+    <!--main-->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Rural_house_32.png -->
+    <link rel="shortcut icon" href="image/Rural_house_32.png">
+    
+</head><!--/head-->
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body> 
-          <div class="masthead">
-          <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Inicio</a>
-    </div>
+<body> <!--body-->
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="whoWeAre.php">Quienes Somos<span class="sr-only">(current)</span><img src="image/Big_barn_32.png"></a></li>
-        <li><a href="farmAnimals.php">Ganaderia<img src="image/Cow_silhouette_32_1.png"></a></li>
-        <li><a href="ecologicalGarden.php">Huerto ecologico<img src="image/Plant_leaves_on_a_hand_32.png"></a></li>
-        <li class="dropdown">
-          <a href="farmEquipment.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="image/Tractor_32.png">Maquinaria <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="farmEquipment.php">Agricola</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="livestockEquipment.php">Ganadera</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="contacts.php"><img src="image/Touch_screen_phone_32 (2).png">Contactos</a></li>
-        <form class="navbar-form navbar-left" role="login">
-        <div class="form-group">
-          <input type="email" name="usuario" class="form-control" placeholder="xyz@ejemplo.com" required="">
-          <input type="password" name="contrasena" class="form-control" placeholder="contraseña" required="">
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-      </form>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-  </ol>
+<!--Menu de navegacion-->
 
-  <!-- Wrapper for slides -->
-
-  <div class="carousel-inner" role="listbox">
-
-  <div class="item active">
-      <img src="image/logo.png" alt="La Calera">
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-
-    <div class="item ">
-      <img src="image/casa.png" alt="Casa">
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item ">
-      <img src="image/tractor.png" alt="Jhon Deere">
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="image/segadora.png" alt="Segadora Jhon Deere">
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <img src="image/holstein.png" alt="Holstein">
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-    <div class="item">
-      <img src="image/ternero.png" alt="Ternero">
-      <div class="carousel-caption">
-      </div>
-    </div>
-
-
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Atras</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Adelante</span>
-  </a>
-</div>
-        <div class="navbar navbar-default navbar-fixed-bottom">
-            <!-- Contact Details Column -->
-                <p class="navbar-text pull-left"><img src="image/socialNetwork/Close_envelope_32.png"> 
-                    <abbr title="CorreoElectronico"></abbr>: <a href="mailto:fernandoalexander2014@gmail.com">laCalera@yahoo.com</a>
-                </p>
-                <p>
-                <ul class="list-unstyled list-inline list-social-icons pull-right">
-                    <li>
-                        <a href="https://es-la.facebook.com/"><img src="image/socialNetwork/Facebook_Logo_Button_32.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/?lang=es"><img src="image/socialNetwork/Twitter_Logo_Button_32.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/"><img src="image/socialNetwork/Instagram_Logo_32.png"></a>
-                    </li>
+    <!--Menu de navegacion-->
+    <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.php"><img   alt="La Calera"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.php">Inicio</a></li>
+                    <li><a href="whoWeAre.php">Quienes Somos</a></li>
+                    <li><a href="farmAnimals.php">Ganaderia</a></li>
+                    <li><a href="ecologicalGarden.php">Huerto ecologico</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Maquinaria<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="farmEquipment.php">Agricola</a></li>
+                            <li class="divider"></li>
+                            <li><a href="livestockEquipment.php">Ganadera</a></li>
+                        </ul>
+                    </li> 
+                    <li><a href="contacts.php">Contactos</a></li>
                 </ul>
+            </div>
+            <br>
+            <p>
         </div>
+    </header><!--/header-->
 
-</div>
-<!-- jQuery -->
-<script type="text/javascript" src="js/jquery.js"></script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--Carrusel de imagenes-->
+
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide wet-asphalt">
+            <ol class="carousel-indicators">
+                <li data-target="" data-slide-to="0" class="active"></li>
+                <li data-target="" data-slide-to="1"></li>
+                <li data-target="" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active" style="background-image: url(image/casaHuerta.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1">Hacienda "La Calera"</h2>
+                                    <h3><p class="animation animated-item-2">"Una de las mejores Haciendas del Canton Mejia"</p></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(image/jardin.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="carousel-content center centered">
+                                    <h2 class="boxed animation animated-item-1">Aplicando tecnicas amigables con el ambiente</h2>
+                                    <p class="boxed animation animated-item-2">Capacitando a nuestro personal en el uso de tecnologia de ultima generacion</p>
+                                    <br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+                <div class="item" style="background-image: url(image/vacas.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content centered">
+                                    <h2 class="animation animated-item-1">El mejor ganado vacuno Neozelandes</h2>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div><!--/.item-->
+
+            </div><!--Carrusel Inner-->
+
+        </div><!--Carrusel-->
+        <a class="prev hidden-xs" href="#main-slider" data-slide="prev">
+            <i class="icon-angle-left"></i>
+        </a>
+        <a class="next hidden-xs" href="#main-slider" data-slide="next">
+            <i class="icon-angle-right"></i>
+        </a>
+    </section><!--Fin carrusel de imagenes-->
+
+    <!--Redes Sociales-->
+    <section id="services" class="emerald">
+        <div class="container">
+                    <h3>Redes Sociales</h3>
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="icon-twitter icon-md"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Twitter</h3>
+                        </div>
+                    </div>
+                </div><!--col-md-4-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="icon-facebook icon-md"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Facebook</h3>
+                        </div>
+                    </div>
+                </div><!--col-md-4-->
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="media">
+                        <div class="pull-left">
+                            <i class="icon-google-plus icon-md"></i>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="media-heading">Google Plus</h3>
+                        </div>
+                    </div>
+                </div><!--col-md-4-->
+
+            </div>
+        </div>
+    </section><!--Fin Redes sociales-->
+
+    <!--Pie de pagina-->
+    <footer id="footer" class="midnight-blue ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    &copy; 2015 <a target="_blank">La Calera S.A.</a>. Todos los derechos reservados.
+                </div>
+                <div class="col-sm-8">
+                    <ul class="pull-right">
+                        <li><a href="index.php">Inicio</a></li>
+                        <li><a href="whoWeAre.php">Quienes Somos</a></li>
+                        <li><a href="farmAnimals.php">Ganaderia</a></li>
+                        <li><a href="ecologicalGarden.php">Huerto Ecologico</a></li>
+                        <li class="dropdown">
+                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Maquinaria<i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="farmEquipment.php">Agricola</a></li>
+                            <li class="divider"></li>
+                            <li><a href="livestockEquipment.php">Ganadera</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="contacts.php">Contactos</a></li>
+                        <li><a id="gototop" class="gototop" href=""><i class="icon-chevron-up"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--Fin pie de pagina-->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+    <!-- prettyPhoto -->
+    <script src="js/jquery.prettyPhoto.js"></script>
+
+</body>
+</html><!--Fin Bloque HTML-->
