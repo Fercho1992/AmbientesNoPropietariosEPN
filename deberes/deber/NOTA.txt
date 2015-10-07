@@ -1,6 +1,0 @@
-7/10
-Datos.php y Formulario.php deberían contener solamente código PHP pero está el código mezclado.
-La solución que habías escrito para resolver los errores estaba bien. Pero se podía solucionar más simple con el if($_POST).
-La presentación de los datos quedaría mejor utilizando HTML en lugar de imprimir el texto solo con PHP.
-Si te das cuenta no se están pasando todas las selecciones de los checkbox solo la última. para recoger todos los elementos el nombre de los check deben ser como un arreglo Ej: intereses[].
-Hay que siempre identar correctamente el código, esto está fallando un poco en tus archivos.
